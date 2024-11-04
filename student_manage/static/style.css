@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(249, 241, 229);
+}
+h1{
+    color: rgb(61, 5, 5);  
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+th,td{
+    border: 1px solid rgb(21, 6, 76);
+    color: rgb(61, 5, 5);
+}
+#btn{
+    background-color: rgb(61, 5, 5);
+    color: white;
+}
+input{
+    border: 1px solid rgb(11, 11, 75);
+}
