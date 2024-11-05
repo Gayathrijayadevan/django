@@ -30,10 +30,13 @@
             <td>{{std.rollno}}</td>
             <td>{{std.name}}</td>
             <td>{{std.age}}</td>
+            <td>
+                <a href="edit/{{std.rollno}}">Edit</a>
+                <a href="delete/{{std.rollno}}">Delete</a>
+            </td>
         </tr>
         {% endfor %}
         </tbody>
     </table>
-    <img src="{% static 'img/con2-woman.jpg' %}" alt="">
 </body>
 </html>

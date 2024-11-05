@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+   <h2>Edit Student</h2> 
+   <form action="" method="post">
+        {% csrf_token %}
+        <input type="number" name="rollno" id="" placeholder="rollno" value="{{data.rollno}}">
+        <input type="text" name="name" id="" placeholder="name" value="{{data.name}}">
+        <input type="text" name="age" id="" placeholder="age" value="{{data.age}}">
+        <input type="submit" value="submit" id="btn" value="Update">
+    </form>
+</body>
+</html>
