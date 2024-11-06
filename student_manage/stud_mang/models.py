@@ -7,3 +7,6 @@ class Student(models.Model):
     age=models.IntegerField()
     mark=models.IntegerField()
     address=models.TextField()
+
+    def __str__(self):
+         return self.name

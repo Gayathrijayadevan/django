@@ -14,24 +14,32 @@
         <input type="number" name="rollno" id="" placeholder="rollno">
         <input type="text" name="name" id="" placeholder="name">
         <input type="text" name="age" id="" placeholder="age">
+        <input type="number" name="mark" id="" placeholder="mark">
+        <input type="text" name="address" id="" placeholder="address">
         <input type="submit" value="Add" id="btn">
     </form>
     <table>
         <thead>
             <tr>
+                <th>id</th>
                 <th>Roll_NO</th>
                 <th>Name</th>
                 <th>Age</th>
+                <th>Mark</th>
+                <th>Address</th>
             </tr>
         </thead>
         <tbody>
             {% for std in students  %}
         <tr>
+            <td>{{std.pk}}</td>
             <td>{{std.rollno}}</td>
             <td>{{std.name}}</td>
             <td>{{std.age}}</td>
+            <td>{{std.mark}}</td>
+            <td>{{std.address}}</td>
             <td>
-                <a href="edit/{{std.rollno}}">Edit</a>
+                <a href="edit/{{std.pk}}">Edit</a>
                 <a href="delete/{{std.rollno}}">Delete</a>
             </td>
         </tr>
